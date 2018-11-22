@@ -125,19 +125,19 @@ namespace AppVectores
 
             if (nota > 0 && nota <= 10)
             {
-                if (nota >= 0 && nota <= 5)
+                if (nota >= 0 && nota <5)
                 {
                     Console.WriteLine("SUSPENSO");
                 }
-                else if (nota > 5 && nota <= 6.5)
+                else if (nota >= 5 && nota < 6.5)
                 {
                     Console.WriteLine("APROBADO");
                 }
-                else if (nota > 6.5 && nota <= 8.5)
+                else if (nota >= 6.5 && nota < 8.5)
                 {
                     Console.WriteLine("NOTABLE");
                 }
-                else if (nota > 8.5 && nota < 10)
+                else if (nota >= 8.5 && nota < 10)
                 {
                     Console.WriteLine("SOBRESALIENTE");
                 }
