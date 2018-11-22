@@ -11,6 +11,10 @@ namespace AppVectores
         static void Main(string[] args)
         {
             Console.WriteLine("Control de Versiones");
+            Console.WriteLine("Probando el control de versiones");
+
+
+
             Console.ReadKey();
 
 
