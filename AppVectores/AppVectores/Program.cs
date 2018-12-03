@@ -49,14 +49,17 @@ namespace AppVectores
             calf(10);
             Console.ReadKey();
             Console.Clear();
-
+            vectorVera();
+            Console.ReadKey();
 
         }
 
+     
 
-        // EJERCICIO 1 
-        // Calcular la potencia de un numero son usar Math.Pow
-        public static double potencia1(int x, int y)
+    
+    // EJERCICIO 1 
+    // Calcular la potencia de un numero son usar Math.Pow
+    public static double potencia1(int x, int y)
         {
             int pot = 1;
             for (int i = 1; i <= y; i++)
@@ -173,5 +176,38 @@ namespace AppVectores
             }
             return pot;
         }
+
+        // CLASE ULTIMA DE VECTOR PROFE
+        public static void vectorVera()
+        {
+            int[] x = new int[8];
+            x[0] = 1;
+            x[1] = 20;
+            x[2] = 25;
+            x[3] = 13;
+            x[4] = 5;
+            x[5] = 11;
+            x[6] = 3;
+            x[7] = 100;
+
+            //VECTOR IMPRIMIR
+            Console.WriteLine("\nElementos del vector\n======================\n");
+            for (int i = 0; i < 8; i++)
+            {
+                Console.WriteLine("Elemento indice{0} --> {1}", (i + 1), x[i]);
+            }
+            //SUMATORIA DE VECTORES
+            int s = 0;
+            for (int i = 0; i < x.Length; i++)
+            {
+                s = s + x[i];
+            }
+            Console.WriteLine("SUMATORIA ES: {0}", s);
+            //PROMEDIO DEL VECTOR
+            Console.WriteLine("PROMEDIO ES:  {0}", s / x.Length);
+
+        }
+
+
     }
 }
