@@ -13,11 +13,52 @@ namespace AppVectores
             Console.WriteLine("Control de Versiones");
             Console.WriteLine("Probando el control de versiones");
 
+            Console.ReadKey();
+
+
+
+            Console.WriteLine("PROFESOR AQUI COMIENZA LA TAREA NUEVA");
+            Console.ReadKey();
+            //  EJERCICIO DE LA TAREA NUEVA //
+            int[] n;
+            int cant;
+            int numero = 0;
+            int mayor, menor;
+            Console.WriteLine("INGRESE EL TAMAÑO DEL ARRAY");
+            cant = int.Parse(Console.ReadLine());
+            n = new int[cant];
+
+            for (int i = 0; i < cant; i++)
+            {
+                do
+                {
+                    Console.WriteLine(" ingrese el elemento " + (i + 1) + ": ");
+
+                    numero = int.Parse(Console.ReadLine());
+                    n[i] = numero;
+                } while (numero < 0 || numero > 1001);
+
+
+            }
+            mayor = n[0];
+
+            menor = n[0];
+            for (int i = 0; i < cant; i++)
+            {
+                if (n[i] > mayor)
+                    mayor = n[i];
+                else if (n[i] < menor)
+                    menor = n[i];
+            }
+            Console.WriteLine("El mayor de los elementos es: " + mayor);
+            Console.WriteLine("El menor de los elementos es: " + menor);
 
 
             Console.ReadKey();
 
-         
+            //AQUI ACABA MI TAREA//
+
+
 
             Console.WriteLine("EJERCICIO 1 POTENCIAS;");
             Console.Write("POTENCIA CON FOR  \n ");
@@ -207,6 +248,13 @@ namespace AppVectores
             Console.WriteLine("PROMEDIO ES:  {0}", s / x.Length);
 
         }
+
+
+
+
+
+
+
 
 
     }
